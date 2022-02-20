@@ -1,0 +1,222 @@
+/* Author: Syafi
+2020 06 */
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Open Sans, sans-serif;
+}
+
+.fixed-element {
+  position: fixed;
+  top: 15%;
+  left: 5%;
+  transform: translate(-50%, -50%);
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+.insta {
+  position: fixed;
+  padding-left: 10px;
+  width: 60px;
+  cursor: pointer;
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  padding: 10px;
+  padding-left: 4%;
+  padding-right: 4%;
+  box-sizing: border-box;
+}
+
+.container2 {
+  width: 100%;
+  padding: 10px;
+  padding-left: 4%;
+  padding-right: 4%;
+  box-sizing: border-box;
+}
+
+.navbar {
+  height: 10%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  background-color: rgba(245, 245, 245);
+  border-collapse: collapse;
+  border-radius: 5px 5px 5px 5px;
+  overflow: hidden;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 15);
+  transition: 0.5s;
+}
+
+a {
+  color: white;
+}
+
+a:hover {
+  color: rgba(150, 150, 150, 0.8);
+  transition: 0.2s;
+}
+
+.logo {
+  padding-left: 10px;
+  width: 60px;
+  cursor: pointer;
+}
+
+nav {
+  flex: 1;
+  text-align: right;
+  /* margin-right: 10px; */
+}
+
+nav ul li {
+  list-style: none;
+  display: inline-block;
+  margin: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: black;
+  text-shadow: 0 0 1px rgba(0, 0, 0, 3);
+  font-size: 13;
+  padding-right: 10px;
+}
+
+.row {
+  display: flex;
+  height: 80%;
+  align-items: center;
+  color: white;
+}
+
+.column {
+  padding-left: 5%;
+  flex-basis: 50%;
+  min-width: 350px;
+}
+
+.c2 {
+  align-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 100px;
+  min-width: 700px;
+}
+
+h1 {
+  font-size: 50px;
+  text-shadow: 5px 0 2px rgba(0, 0, 0, 0.3);
+}
+
+.main-p {
+  font-size: 16px;
+  margin-top: 20px;
+  line-height: 30px;
+}
+
+button {
+  width: 100px;
+  color: white;
+  font-size: 15px;
+  padding: 10px;
+  background-color: rgba(94, 94, 94, 0.8);
+  border-collapse: collapse;
+  border-radius: 5px;
+  border: 0;
+  overflow: hidden;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 15);
+  outline: none;
+  margin-top: 30px;
+  transition: 0.5s;
+}
+
+#more {
+  display: none;
+}
+
+button:hover {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.story-list {
+  width: 90%;
+  height: 50%;
+  display: inline-block;
+  border-radius: 10px;
+  padding: 15px;
+  box-sizing: border-box;
+  cursor: pointer;
+  margin: 10px 15px;
+  box-shadow: 5px 0 2px rgba(0, 0, 0, 0.3);
+  background-size: cover;
+  background-position: center;
+  text-shadow: 5px 0 2px rgba(0, 0, 0, 0.3);
+  transition: 0.8s;
+}
+
+.stories {
+  width: 300px;
+  height: 300px;
+  display: inline-block;
+  border-radius: 10px;
+  padding: 20px;
+  box-sizing: border-box;
+  cursor: pointer;
+  margin: 10px 15px;
+  box-shadow: 5px 0 2px rgba(0, 0, 0, 0.3);
+  background-size: cover;
+  background-position: center;
+  text-shadow: 5px 0 2px rgba(0, 0, 0, 0.3);
+  content: "";
+  z-index: -1;
+  transition: 0.8s;
+}
+
+.s1 {
+  background-image: url(images/sunflower.jpg);
+}
+.s2 {
+  background-image: url(images/torches.jpg);
+}
+.s3 {
+  background-image: url(images/envelope.png);
+}
+.s4 {
+  background-image: url(images/sea.png);
+}
+
+.story-list:hover {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.story-list:before {
+  height: 120%;
+}
+
+.story {
+  border: 1px solid #999;
+  display: block;
+  margin-top: 20px;
+  padding: 20px;
+  background-color: rgba(245, 245, 245);
+  border-collapse: collapse;
+  border-radius: 5px 5px 5px 5px;
+  overflow: hidden;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 15);
+  transition: 0.5s;
+}

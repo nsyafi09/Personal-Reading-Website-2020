@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <title>2600190442-5 S2V</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <style>
+    body {
+      background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+        url(css/images/background.jpg);
+      background-attachment: fixed;
+      background-size: cover;
+      width: 100%;
+    }
+  </style>
+  <body>
+    <div class="container">
+      <div class="navbar">
+        <a href="index.html"><img src="css/images/logo1.png" class="logo" /></a>
+        <nav>
+          <ul>
+            <li>
+              <a href="index.html">Home</a>
+            </li>
+            <li><a href="stories.html">Stories</a></li>
+          </ul>
+        </nav>
+        <!-- <img src="images/menu.png" class="menu-icon"> -->
+      </div>
+
+      <div class="row">
+        <div class="c2">
+          <div class="stories s1">
+            <h5>
+              <a style="text-decoration: none" href="sunflower.html"
+                >Sunflower's Promise</a
+              >
+            </h5>
+          </div>
+          <div class="stories s2">
+            <h5>
+              <a style="text-decoration: none" href="dancing-torches.html"
+                >Dancing Torches</a
+              >
+            </h5>
+          </div>
+          <div class="stories s3">
+            <h5>
+              <a style="text-decoration: none" href="envelope.html"
+                >Had I Have One More Envelope to Write</a
+              >
+            </h5>
+          </div>
+          <div class="stories s4">
+            <h5>
+              <a style="text-decoration: none" href="sea.html"
+                >Shallow Light Upon the Sea</a
+              >
+            </h5>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script>
+      function myFunction() {
+        var dots = document.getElementById("dots");
+        var moreText = document.getElementById("more");
+        var btnText = document.getElementById("myBtn");
+
+        if (dots.style.display === "none") {
+          dots.style.display = "inline";
+          btnText.innerHTML = "Read more";
+          moreText.style.display = "none";
+        } else {
+          dots.style.display = "none";
+          btnText.innerHTML = "Read less";
+          moreText.style.display = "inline";
+        }
+      }
+    </script>
+  </body>
+</html>

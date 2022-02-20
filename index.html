@@ -1,0 +1,110 @@
+<!-- Author: Syafi
+2020 06 -->
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <title>2600190442-5 S2V</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <style>
+    body {
+      background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+        url(css/images/background.jpg);
+      background-attachment: fixed;
+      background-size: cover;
+      width: 100%;
+    }
+  </style>
+  <body>
+    <div class="container">
+      <div class="navbar">
+        <a href="index.html"><img src="css/images/logo1.png" class="logo" /></a>
+        <nav>
+          <ul>
+            <li>
+              <a href="index.html">Home</a>
+            </li>
+            <li><a href="stories.html">Stories</a></li>
+          </ul>
+        </nav>
+        <!-- <img src="images/menu.png" class="menu-icon"> -->
+      </div>
+
+      <div class="row">
+        <div class="column">
+          <h1>Shallow Light Upon the Sea</h1>
+          <p class="main-p">
+            The breeze of wind had always accompanied me everyday, the smell of
+            sea and the never-ending horizon guided the way. They came to me for
+            a greeting, something that would always be there smiling. Like
+            glittering of sand, soft and warmed by the sun, the emotion that
+            last and will forever stand.<span id="dots">...</span>
+            <span id="more"
+              ><br />The stars had spoken to me through the ocean, they asked me
+              in return to write them stories and put them into motion. Tales
+              that could reach even the deepest of the heart, words that would
+              be not less than an art.</span
+            >
+          </p>
+          <button onclick="myFunction()" id="myBtn">Read more</button>
+        </div>
+        <div class="column">
+          <div class="story-list s1">
+            <h5>
+              <a style="text-decoration: none" href="sunflower.html"
+                >Sunflower's Promise</a
+              >
+            </h5>
+          </div>
+          <div class="story-list s2">
+            <h5>
+              <a style="text-decoration: none" href="dancing-torches.html"
+                >Dancing Torches</a
+              >
+            </h5>
+          </div>
+          <div class="story-list s3">
+            <h5>
+              <a style="text-decoration: none" href="envelope.html"
+                >Had I Have One More Envelope to Write</a
+              >
+            </h5>
+          </div>
+          <div class="story-list s4">
+            <h5>
+              <a style="text-decoration: none" href="sea.html"
+                >Shallow Light Upon the Sea</a
+              >
+            </h5>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="fixed-element">
+      <a href=""><img src="css/images/insta.png" class="insta" /></a>
+    </div>
+
+    <!-- JavaScript -->
+    <script>
+      function myFunction() {
+        var dots = document.getElementById("dots");
+        var moreText = document.getElementById("more");
+        var btnText = document.getElementById("myBtn");
+
+        if (dots.style.display === "none") {
+          dots.style.display = "inline";
+          btnText.innerHTML = "Read more";
+          moreText.style.display = "none";
+        } else {
+          dots.style.display = "none";
+          btnText.innerHTML = "Read less";
+          moreText.style.display = "inline";
+        }
+      }
+    </script>
+  </body>
+</html>
